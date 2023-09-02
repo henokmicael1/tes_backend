@@ -1,0 +1,188 @@
+body {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 16px;
+    width: 700px;
+}
+
+.pdf-header-class div.pdf-header {
+    width: 74%;
+    display: inline-block;
+}
+
+.pdf-header-class div.pdf-header P {
+    font-weight: 600;
+    margin: 0;
+    line-height: 22px;
+    display: inline-block
+}
+
+.invoice {
+    width: 25%;
+    padding: 0;
+    border: none;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.invoice h2 {
+    margin: 0;
+    color: #393939;
+}
+
+.invoice p {
+    margin: 7px 0;
+}
+
+.invoice h4 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.info p {
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.bill-point {
+    padding: 0;
+    border: none;
+    color: #393939;
+    line-height: 28px;
+}
+
+.bill-point h2 {
+    margin: 0;
+}
+
+.bill-point p {
+    margin: 0;
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+}
+
+table.first-table {
+    margin-bottom: 15px;
+}
+
+table th {
+    padding: 5px;
+    background-color: #dddddd;
+}
+
+table td {
+    text-align: center;
+    padding: 5px;
+}
+
+.displayErr {
+    margin: 100px 40px 40px 40px;
+    background-color: #dddddd;
+}
+
+.displayErr h2 {
+    margin: 0;
+    text-align: center;
+    color: #d8230b;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 5px 0;
+}
+
+table.last-table {
+    width: 30%;
+    margin-left: auto;
+    display: block;
+}
+
+table.last-table th {
+    padding: 5px;
+    background-color: #dddddd;
+    text-align: right;
+    font-weight: 600;
+}
+
+table.last-table td {
+    text-align: right;
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.listStyle {
+    padding: 0;
+    margin: 0;
+}
+
+.listStyle li {
+    display: inline-block;
+    width: 16%;
+    border: #ccc solid 1px;
+    margin: -2px;
+    /* padding: 2px; */
+    min-height: 39px;
+    border-top: 0;
+    padding: 8px 0;
+}
+
+.listStyleBg {
+    margin-top: 40px;
+}
+
+.listStyleBg li {
+    background-color: #dddddd;
+    vertical-align: bottom;
+}
+
+.listStyleTwo {
+    padding: 0;
+    margin: 0;
+}
+
+.listStyleTwo {
+    margin-top: 20px;
+}
+
+.listStyleTwoBg li {
+    background-color: #dddddd;
+    vertical-align: bottom;
+}
+
+.listStyleTwo li {
+    display: inline-block;
+    width: 18%;
+    margin: -2px;
+    /* padding: 2px; */
+    min-height: 39px;
+    border-top: 0;
+    padding: 8px 0;
+}
+
+.listStyleTwo li:nth-child(2) {
+    width: 44%;
+}
+
+.listStyleThree {
+    padding: 0;
+    margin: 0;
+}
+
+.listStyleThree li {
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+}
+
+.listStyleThree li.bg {
+    background-color: #dddddd;
+    /* padding: 2px; */
+    text-align: right;
+}
+
+.bottomDiv {
+    margin-bottom: 30px;
+}

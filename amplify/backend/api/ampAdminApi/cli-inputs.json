@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/admin": {
+      "name": "/admin",
+      "lambdaFunction": "ampAdminFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/accountant": {
+      "name": "/accountant",
+      "lambdaFunction": "ampAccountantFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

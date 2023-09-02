@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/truck": {
+      "name": "/truck",
+      "lambdaFunction": "ampTruckFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dispatchapp-dev-124420-authRole",
+      "UnauthRoleArn": "arn:aws:iam::033572882141:role/amplify-dispatchapp-dev-124420-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::033572882141:role/amplify-dispatchapp-dev-124420-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+      "UnauthRoleName": "amplify-dispatchapp-dev-124420-unauthRole",
+      "StackName": "amplify-dispatchapp-dev-124420",
+      "StackId": "arn:aws:cloudformation:us-east-1:033572882141:stack/amplify-dispatchapp-dev-124420/00d57410-be76-11ec-9d6d-1296d0f2c267",
+      "AmplifyAppId": "d22pb1yrkyzhuo"
+    },
+    "categories": {
+      "auth": {
+        "dispatchappfea304cb": {}
+      },
+      "storage": {
+        "s332fbe697": {}
+      },
+      "function": {
+        "ampAccountantFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampAccountantFunction-4c614d437a7746783036-build.zip"
+        },
+        "ampAdminFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampAdminFunction-397a53424e46494c6a74-build.zip"
+        },
+        "ampBrokerFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampBrokerFunction-7865737463535737476a-build.zip"
+        },
+        "ampCompanyDetailsFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampCompanyDetailsFunction-5755586c457177337775-build.zip"
+        },
+        "ampCompanyFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampCompanyFunction-6a44506e62375979554f-build.zip"
+        },
+        "ampDashboardFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampDashboardFunction-772f3664413171544d63-build.zip"
+        },
+        "ampDispatcherFuntion": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampDispatcherFuntion-4a7972745471774f745a-build.zip"
+        },
+        "ampDocumentReaderFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampDocumentReaderFunction-6763774b713836754f64-build.zip"
+        },
+        "ampDriverFuntion": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampDriverFuntion-6c4642374e38526b594d-build.zip"
+        },
+        "ampExpenseFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampExpenseFunction-4c6249446f2b36356657-build.zip"
+        },
+        "ampLoadFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampLoadFunction-6f796f482b734967614f-build.zip"
+        },
+        "ampPaymentFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampPaymentFunction-6237782b4f6e2b694777-build.zip"
+        },
+        "ampSubscriptionFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampSubscriptionFunction-786a7339414646727667-build.zip"
+        },
+        "ampTrailerFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampTrailerFunction-4b67705471735a6b7365-build.zip"
+        },
+        "ampTruckFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampTruckFunction-5930794d465168315a30-build.zip"
+        },
+        "ampUtilityFunction": {
+          "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
+          "s3Key": "amplify-builds/ampUtilityFunction-6c33385863465a2f7957-build.zip"
+        }
+      },
+      "api": {
+        "ampDashboardAPI": {},
+        "ampDriverApi": {},
+        "ampTruckApi": {},
+        "ampTrailerApi": {},
+        "ampDispatcherApi": {},
+        "ampLoadApi": {},
+        "ampBrokerApi": {},
+        "ampUtilityApi": {},
+        "ampDocumentReaderFunction": {},
+        "ampPaymentApi": {},
+        "ampExpenseFunction": {},
+        "ampCompanyDetailsFunction": {},
+        "ampAccountantApi": {},
+        "ampExpenseApi": {},
+        "ampDocumentReaderApi": {},
+        "ampCompanyDetailsApi": {},
+        "ampAdminApi": {},
+        "ampCompanyApi": {},
+        "ampSubscriptionApi": {}
+      }
+    }
+  }
+}

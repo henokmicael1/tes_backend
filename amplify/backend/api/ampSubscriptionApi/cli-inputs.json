@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/subscription": {
+      "name": "/subscription",
+      "lambdaFunction": "ampSubscriptionFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

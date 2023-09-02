@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/broker": {
+      "name": "/broker",
+      "lambdaFunction": "ampBrokerFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/expense": {
+      "name": "/expense",
+      "lambdaFunction": "ampExpenseFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

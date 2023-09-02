@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/documentReader": {
+      "name": "/documentReader",
+      "lambdaFunction": "ampDocumentReaderFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

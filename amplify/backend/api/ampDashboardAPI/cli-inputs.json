@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/dashboard": {
+      "name": "/dashboard",
+      "lambdaFunction": "ampDashboardFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/driver": {
+      "name": "/driver",
+      "lambdaFunction": "ampDriverFuntion",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

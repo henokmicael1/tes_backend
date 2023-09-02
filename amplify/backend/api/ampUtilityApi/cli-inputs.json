@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/utility": {
+      "name": "/utility",
+      "lambdaFunction": "ampUtilityFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

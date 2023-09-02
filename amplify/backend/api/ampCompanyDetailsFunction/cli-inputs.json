@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/company": {
+      "name": "/company",
+      "lambdaFunction": "ampCompanyDetailsFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

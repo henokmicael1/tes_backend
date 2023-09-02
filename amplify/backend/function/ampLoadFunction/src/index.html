@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="pdf-header-class">
+                <div class="pdf-header">
+                    <P> MODEL TRANSPORT LLC <br>9304 FOREST LN SUITE 236 <br> DALLAS, TX 75243</P>
+                </div>
+                <div class="invoice">
+                    <h2>INVIOCE</h2>
+                    <p>Date: {{lastUpdated}}</p>
+                    <h4>Inv# {{invoiceId}}</h4>
+                </div>
+            </div>
+            <div class="info">
+                <div>
+                    <p>
+                        TEL# 323-674-6094 <br> FAX# <br> Email: MODEL TRANSPORT18@GMAIL.COM
+                    </p>
+                </div>
+            </div>
+            <div class="bill-point">
+                <div>
+                    <h2>BILL TO:</h2>
+                    <h2>SPOT</h2>
+                    <p>141 SOUTH MERIDIAN STREET INDIANPOLIS, IN 46225</p>
+                </div>
+            </div>
+        </div>
+
+        <ul class="listStyle listStyleBg">
+            <li><b>SHIPMENT DATE</b></li>
+            <li><b>LOAD NO.</b></li>
+            <li><b>TRUCK#</b></li>
+            <li><b>TRAILER#	</b></li>
+            <li><b>P O NO.</b></li>
+            <li><b>TERMS</b></li>
+        </ul>
+        <ul class="listStyle">
+            <li>02/13/2023 </li>
+            <li>{{loadId}}</li>
+            <li>{{truckFk}}</li>
+            <li>{{trailorId}}</li>
+            <li>HOOK- </li>
+            <li>-</li>
+            <li>Net 15 Days
+            </li>
+        </ul>
+
+
+
+        <ul class="listStyleTwo listStyleTwoBg">
+            <li><b>QUANTITY</b></li>
+            <li><b>DESCRIPTION  </b></li>
+            <li><b>UNIT PRICE</b></li>
+            <li><b>TOTAL	</b></li>
+        </ul>
+        <ul class="listStyleTwo">
+            <li> - </li>
+            <li>LEWISVILLE, TX TO LANCASTER, PA</li>
+            <li> - </li>
+            <li>${{rate}}</li>
+        </ul>
+
+        <div class="displayErr">
+            <h2>
+                NOTICE OF ASSIGNMENT <br> THIS INVOICE HAS BEEN ASSIGNED TO, <br> AND MUST BE PAID DIRECTLY TO: <br> PHOENIX CAPITAL GROUP, <br> LLC P.O.BOX 1415 <br> DES MOINES, IA 50305 <br> Tel: 623-298-3466
+            </h2>
+        </div>
+
+
+        <div class="bottomDiv">
+            <ul class="listStyleThree">
+                <li class="bg"><b>LINE HAUL</b></li>
+                <li>-</li>
+            </ul>
+            <ul class="listStyleThree">
+                <li class="bg"> <b>FSC</b> </li>
+                <li>-</li>
+            </ul>
+            <ul class="listStyleThree">
+                <li class="bg"><b>STOP OFF	</b></li>
+                <li>-</li>
+            </ul>
+            <ul class="listStyleThree">
+                <li class="bg"> <b>UNLOADING	</b> </li>
+                <li>-</li>
+            </ul>
+            <ul class="listStyleThree">
+                <li class="bg"> <b>TOTAL DUE		</b> </li>
+                <li>$2,600.00</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

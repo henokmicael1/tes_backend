@@ -1,0 +1,655 @@
+{
+  "api": {
+    "ampAccountantApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampAccountantFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampAdminApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampAdminFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampBrokerApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampBrokerFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampCompanyApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampCompanyFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampCompanyDetailsApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampCompanyDetailsFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampCompanyDetailsFunction": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampCompanyDetailsFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampDashboardAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampDashboardFunction"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampDriverFuntion"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampDispatcherApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampDispatcherFuntion"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampDocumentReaderApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampDocumentReaderFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampDocumentReaderFunction": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampDocumentReaderFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampDriverApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampDriverFuntion"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampExpenseApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampExpenseFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampExpenseFunction": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampExpenseFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampLoadApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampLoadFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampPaymentApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampPaymentFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampSubscriptionApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampSubscriptionFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampTrailerApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampTrailerFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampTruckApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampTruckFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "ampUtilityApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "ampUtilityFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "dispatchappfea304cb": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "ampAccountantFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampAdminFunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampBrokerFunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampCompanyDetailsFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampCompanyFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampDashboardFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampDispatcherFuntion": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampDocumentReaderFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampDriverFuntion": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampExpenseFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampLoadFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampPaymentFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampSubscriptionFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampTrailerFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampTruckFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "ampUtilityFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_ampAccountantFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampAccountantFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampAccountantFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampAccountantFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampAdminFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampAdminFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampAdminFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampAdminFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampBrokerFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampBrokerFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampBrokerFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampBrokerFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampCompanyDetailsFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampCompanyDetailsFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampCompanyDetailsFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampCompanyDetailsFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampCompanyFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampCompanyFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampCompanyFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampCompanyFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDashboardFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDashboardFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDashboardFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDashboardFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDispatcherFuntion_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDispatcherFuntion"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDispatcherFuntion_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDispatcherFuntion"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDocumentReaderFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDocumentReaderFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDocumentReaderFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDocumentReaderFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDriverFuntion_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDriverFuntion"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampDriverFuntion_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampDriverFuntion"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampExpenseFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampExpenseFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampExpenseFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampExpenseFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampLoadFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampLoadFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampLoadFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampLoadFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampPaymentFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampPaymentFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampPaymentFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampPaymentFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampSubscriptionFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampSubscriptionFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampSubscriptionFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampSubscriptionFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampTrailerFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampTrailerFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampTrailerFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampTrailerFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampTruckFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampTruckFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampTruckFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampTruckFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampUtilityFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampUtilityFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_ampUtilityFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "ampUtilityFunction"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "s332fbe697": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    }
+  }
+}

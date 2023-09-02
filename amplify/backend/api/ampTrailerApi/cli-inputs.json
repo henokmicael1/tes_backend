@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/trailer": {
+      "name": "/trailer",
+      "lambdaFunction": "ampTrailerFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

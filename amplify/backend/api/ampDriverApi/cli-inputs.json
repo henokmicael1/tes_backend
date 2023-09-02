@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/driver": {
+      "name": "/driver",
+      "lambdaFunction": "ampDriverFuntion",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Load Pdf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+
+<body style="
+      width: 900px;
+      margin: auto;
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+    ">
+    <div class="header" style="color: #969696; text-align: center">
+        <p style="
+          display: inline-block;
+          width: 93%;
+          font-size: 18px;
+          font-weight: 600;
+          padding-left: 0;
+        ">
+            SETTLEMENT STATEMENT - (Finalized)
+        </p>
+        <span style="
+          display: inline-block;
+          text-align: right;
+          font-weight: 600;
+          color: #000000;
+          font-size: 25px;
+        ">#{{paymentdata.payment_id}}</span
+      >
+
+      <div>
+        <ul
+          style="
+            list-style: none;
+            font-size: 16px;
+            color: #969696;
+            text-align: right;
+            font-weight: 600;
+          "
+        >
+          <li style="display: inline-block; width: 10%"></li>
+          <li style="display: inline-block; width: 30%">
+            Statement Date: {{paymentdata.currentDate}}
+          </li>
+          <li style="display: inline-block; width: 50%">
+            Period From: {{paymentdata.startDate}} Thru: {{paymentdata.endDate}}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <table style="width: 100%; vertical-align: top">
+      <tr>
+        <td style="width: 50%; vertical-align: top">
+          {% if paymentdata.statuschange == 'ACCEPTED' %}
+          <div
+            style="
+              color: #969696 !important;
+              font-weight: 500;
+              background: url(https://amplify-try-dev-173136-deployment.s3.amazonaws.com/public/images/APPROVED.png);
+              background-repeat: no-repeat;
+              background-position: right;
+              height: 364px;
+            "
+          >
+          {% else %}
+          <div
+            style="
+              color: #969696 !important;
+              font-weight: 500;
+              background: url(https://amplify-try-dev-173136-deployment.s3.amazonaws.com/public/images/DRAFT.png);
+              background-repeat: no-repeat;
+              background-position: right;
+              height: 364px;
+            "
+          >
+          {% endif %}
+            <b style="margin: 0; font-size: 20px">{{paymentdata.companyAddress}}</b>
+            <p style="margin: 5px 0; font-size: 15px">{{paymentdata.phoneNumber}}</p>
+            <p style="margin: 0; font-size: 15px">{{paymentdata.email}}</p>
+          </div>
+
+          <br />
+          <div style="color: #969696; font-weight: 500">
+            <p
+              style="
+                margin: 5px 0;
+                font-size: 14px;
+                font-weight: 700;
+                color: #969696;
+              "
+            >
+              Driver Number: {{paymentdata.driverNumber}}
+            </p>
+            <p
+              style="
+                margin: 5px 0;
+                font-size: 14px;
+                font-weight: 700;
+                color: #969696;
+              "
+            >
+              Driver Name: {{paymentdata.driverName}}
+            </p>
+            <p
+              style="
+                margin: 5px 0;
+                font-size: 14px;
+                font-weight: 700;
+                color: #969696;
+              "
+            >
+              Truck Number: {{paymentdata.truckNumber}} Trailer Number: {{paymentdata.trailerNumber}}
+            </p>
+          </div>
+        </td>
+        <td style="width: 50%">
+          <ul
+            style="
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              vertical-align: top;
+              border: 1px solid #000000;
+              font-weight: 600;
+              color: #808080;
+            "
+          >
+            <li style="border-bottom: 1px solid #000000">
+              <span
+                style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                "
+              >
+                Gross Amount: ({{paymentdata.loadCount}})
+              </span> ${{paymentdata.grossAmount}}
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                Income Adjustments: (0)
+              </span> $0.00
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #08c;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                ADJUSTED GROSS AMOUNT:
+              </span>
+            <b style="color: #000000"> ${{paymentdata.adjustedGrossAmount}}</b>
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #08c;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                GROSS PAYABLE:
+              </span>
+            <b style="color: #000000">${{paymentdata.grossPayable}}</b>
+        </li>
+        {% for paymentdataex in paymentdata.driverExpenseTotals %}
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                {{ paymentdataex.type }} ({{ paymentdataex.count }}):
+              </span> ${{ paymentdataex.total }}
+        </li>
+        {% endfor %}
+
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                less DEF (0):
+              </span> $ 0.00
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                less Insurance (1):
+              </span> ${{paymentdata.lessInsurance}}
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                less Transaction Fee (0):
+              </span> ${{paymentdata.lessTransaction}}
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                less Other: </span
+              >$ 0.00
+            </li>
+            <li style="border-bottom: 1px solid #000000">
+              <span
+                style="
+                  background: #08c;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                "
+              >
+                INCOME OVER EXPENSES
+              </span>
+            <b style="color: #000000">${{paymentdata.incomeOverExpenses}}</b>
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                Driver's Share (100.00%)
+              </span> $ 0.00
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                add Driver Refunds:
+              </span> ${{paymentdata.addDriverRefunds}}
+        </li>
+        <li style="border-bottom: 1px solid #000000">
+            <span style="
+                  background: #808080;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                less Driver Advances:
+              </span> $ 0.00
+        </li>
+        <li>
+            <span style="
+                  background: #08c;
+                  width: 70%;
+                  color: #fff;
+                  border-right: 1px solid #000000;
+                  text-align: right;
+                  display: inline-block;
+                  padding: 5px;
+                ">
+                DRIVER NET SETTLEMENT
+              </span>
+            <b style="color: #000000">{{paymentdata.driverNetSettlement}}</b>
+        </li>
+        </ul>
+        </td>
+        </tr>
+        </table>
+
+        <table style="width: 100%; vertical-align: top; text-align: left; margin-top: 20px;" cellspacing="0" cellpadding="5" border="1">
+            <tr style="font-size: 14px; background: #404040; color: #ffff00; font-size: 14px;">
+                <th>Load Dates</th>
+                <th>Load Number</th>
+                <th>Originating City</th>
+                <th>Destination City</th>
+                <th style="text-align: center">Status</th>
+                <th style="text-align: right">Load Amount</th>
+                <th style="text-align: right">Net to Driver</th>
+            </tr>
+
+            {% for load in paymentdata.loadDetails %} {% with pickup_address=load.address.0, dropoff_address=load.address|last %}
+            <tr style="font-size: 13px; font-weight: 600; text-align: left">
+                <td>{{ pickup_address.stopDate }} - {{ dropoff_address.stopDate }}</td>
+                <td>{{ load.loadNumber }}</td>
+                <td>{{ pickup_address.city }}, {{ pickup_address.state }} {{ pickup_address.zipCode }}</td>
+                <td>{{ dropoff_address.city }}, {{ dropoff_address.state }} {{ dropoff_address.zipCode }}</td>
+                <td style="text-align: center">{{load.deliveredOrNot}}</td>
+                <td style="text-align: right">${{ load.rate }}</td>
+                <td style="text-align: right">${{ load.deductedRate }}</td>
+            </tr>
+            {% endwith %} {% endfor %}
+
+        </table>
+
+
+
+
+        <p style="
+        text-align: center;
+        color: #969696;
+        font-size: 16px;
+        font-weight: 600;
+      ">
+            Expenses/Deductions
+        </p>
+
+        <table style="width: 100%; vertical-align: top; text-align: left; margin-top: 20px;" cellspacing="0" cellpadding="5">
+            <tr style="font-size: 14px; background: #404040; color: #ffff00; font-size: 14px;">
+                <th style="border: 1px solid #000000">Date</th>
+                <!-- <th style="border: 1px solid #000000">Fuel Card <br />Number</th> -->
+                <th style="border: 1px solid #000000">Expense Or Deduction Detail</th>
+                <th style="border: 1px solid #000000; text-align: right">Expense <br />Amount</th>
+                <th style="border: 1px solid #000000; text-align: right">Claim<br />Amount</th>
+            </tr>
+
+            {% for expense in paymentdata.driverExpenses %}
+            <tr style="font-size: 13px; font-weight: 600; text-align: left; background: #808080;">
+                <td style="border-bottom: 1px solid #000000">{{paymentdata.currentDate}}</td>
+                <!-- <td style="border-bottom: 1px solid #000000">12345</td> -->
+                <td style="border-bottom: 1px solid #000000">{{ expense.expensetype }}: {{paymentdata.companyAddress}}</td>
+                <td style="border-bottom: 1px solid #000000; text-align: right;">${{ expense.cost }}</td>
+                <td style="border-bottom: 1px solid #000000; text-align: right">$ 0.00</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+
+        <p style="
+        text-align: center;
+        color: #969696;
+        font-size: 16px;
+        font-weight: 600;
+      ">
+            Refund
+        </p>
+
+        <table style="width: 100%; vertical-align: top; text-align: left; margin-top: 20px;" cellspacing="0" cellpadding="5">
+            <tr style="font-size: 14px; background: #404040; color: #ffff00; font-size: 14px;">
+                <th style="border: 1px solid #000000">Date</th>
+                <!-- <th style="border: 1px solid #000000">Fuel Card <br />Number</th> -->
+                <th style="border: 1px solid #000000">Expense Or Refund Detail</th>
+                <th style="border: 1px solid #000000; text-align: right">Expense <br />Amount</th>
+                <th style="border: 1px solid #000000; text-align: right">Claim<br />Amount</th>
+            </tr>
+
+            {% for expense in paymentdata.refundExpenses %}
+            <tr style="font-size: 13px; font-weight: 600; text-align: left; background: #808080;">
+                <td style="border-bottom: 1px solid #000000">{{paymentdata.currentDate}}</td>
+                <!-- <td style="border-bottom: 1px solid #000000">12345</td> -->
+                <td style="border-bottom: 1px solid #000000">{{ expense.expensetype }}: {{paymentdata.companyAddress}}</td>
+                <td style="border-bottom: 1px solid #000000; text-align: right;">${{ expense.cost }}</td>
+                <td style="border-bottom: 1px solid #000000; text-align: right">$ 0.00</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <p style="
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        color: #969696;
+      ">
+            Thank you for driving safely!
+        </p>
+</body>
+
+</html>

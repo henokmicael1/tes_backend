@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/dispatcher": {
+      "name": "/dispatcher",
+      "lambdaFunction": "ampDispatcherFuntion",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
