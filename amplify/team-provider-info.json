@@ -83,27 +83,6 @@
           "deploymentBucketName": "amplify-dispatchapp-dev-124420-deployment",
           "s3Key": "amplify-builds/ampUtilityFunction-6c33385863465a2f7957-build.zip"
         }
-      },
-      "api": {
-        "ampDashboardAPI": {},
-        "ampDriverApi": {},
-        "ampTruckApi": {},
-        "ampTrailerApi": {},
-        "ampDispatcherApi": {},
-        "ampLoadApi": {},
-        "ampBrokerApi": {},
-        "ampUtilityApi": {},
-        "ampDocumentReaderFunction": {},
-        "ampPaymentApi": {},
-        "ampExpenseFunction": {},
-        "ampCompanyDetailsFunction": {},
-        "ampAccountantApi": {},
-        "ampExpenseApi": {},
-        "ampDocumentReaderApi": {},
-        "ampCompanyDetailsApi": {},
-        "ampAdminApi": {},
-        "ampCompanyApi": {},
-        "ampSubscriptionApi": {}
       }
     }
   }
